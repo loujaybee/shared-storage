@@ -1,4 +1,4 @@
 image:
   file: .gitpod.Dockerfile
 tasks:
-- command: adsadas
+- command: gp idp login aws --role-arn arn:aws:iam::950174689815:role/shared-state-access-role
