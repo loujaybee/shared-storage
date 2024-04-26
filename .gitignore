@@ -6,4 +6,4 @@ target/*
 .attach_pid*
 /target
 .sts4-cache/
-_site/
+shared
