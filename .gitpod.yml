@@ -1,4 +1,8 @@
 image:
-  file: .gitpod.Dockerfile
+  file: .gitpod/.gitpod.Dockerfile
 tasks:
-- command: gp idp login aws --role-arn arn:aws:iam::950174689815:role/shared-state-access-role
+  - command: |
+      export PATH="$PATH:$GITPOD_REPO_ROOT/.gitpod"
+      gp idp login aws --role-arn arn:aws:iam::950174689815:role/shared-state-access-role
+      mount_shared_folder.sh
+      link_m2.sh
